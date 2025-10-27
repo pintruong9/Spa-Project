@@ -28,9 +28,11 @@ CREATE TABLE services (
     is_active BOOLEAN DEFAULT TRUE
 );
 
-testccccscscsc
-address
-spas
-
-test nề távdadmn
-nạkfkejfbejkfbejkfbnef
+CREATE TABLE reviews (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID REFERENCES users(id) ON DELETE CASCADE,
+    spa_id UUID REFERENCES spas(id) ON DELETE CASCADE,
+    rating INT CHECK (rating >= 1 AND rating <= 5),
+    comment TEXT,
+    created_at TIMESTAMP DEFAULT NOW()
+);
