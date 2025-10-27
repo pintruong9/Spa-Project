@@ -1,0 +1,23 @@
+{
+  "name": "spa_project",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/pintruong9/Spa-Project#readme",
+  "bugs": {
+    "url": "https://github.com/pintruong9/Spa-Project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pintruong9/Spa-Project.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
